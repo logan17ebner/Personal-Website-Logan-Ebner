@@ -412,6 +412,88 @@ nav {
 }
 
 /* ================================
+   WORK SAMPLES
+================================ */
+#work-samples {
+  padding: 6rem 0;
+}
+
+.samples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.sample-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s;
+}
+
+.sample-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.sample-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--green-soft);
+}
+
+.sample-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1.2;
+}
+
+.sample-card p {
+  font-size: 0.88rem;
+  color: #4a4a42;
+  line-height: 1.65;
+}
+
+.sample-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.sample-skills span {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  background: var(--cream-dark);
+  border: 1px solid var(--border);
+  color: var(--gray);
+  padding: 0.2rem 0.65rem;
+  border-radius: 2px;
+}
+
+.sample-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+  padding-bottom: 2px;
+  align-self: flex-start;
+  transition: opacity 0.2s;
+}
+
+.sample-btn:hover { opacity: 0.65; }
+
+/* ================================
    SKILLS
 ================================ */
 #skills {
